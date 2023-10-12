@@ -5,6 +5,14 @@
     "description": "Description",
     "action": {
         "default_popup": "hackathon.html",
-        "default_icon": "https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.jpg"
-    }
+        "default_icon": "https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.png"
+    },
+    "content_scripts": [
+        {
+        "js": ["main.js"],
+        "matches": [
+        "https://www.codesmith.io/"
+              ]
+            }
+          ]
 }
